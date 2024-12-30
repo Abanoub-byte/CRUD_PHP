@@ -16,10 +16,5 @@ if ($conn) {
     echo "Connection failed<br>";
 }
 
-if(!pg_close($conn)) {
-    print "Failed to close connection to " . pg_host($conn) . ": " .
-   pg_last_error($conn) . "<br/>\n";
-} else {
-    print "Successfully disconnected from database";
-}
+
 ?>
